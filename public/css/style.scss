@@ -1,6 +1,6 @@
 $white: #ffffff;
 $black: #252525;
-$primary1: #24d278;
+$primary1: rgba(0, 0, 255, 0.452);
 
 
 @mixin main-font {
@@ -37,7 +37,7 @@ $primary1: #24d278;
 body {
   @include main-font();
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #f70b0b;
 }
 
 .layout_padding {
@@ -106,7 +106,7 @@ body {
     right: 0;
     width: 45%;
     height: 100%;
-    background-image: url(../images/hero-side-bg.png);
+    /*background-image: url(../images/hero-side-bg.png);*/
     background-size: cover;
   }
 }
