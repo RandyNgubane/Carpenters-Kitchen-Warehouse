@@ -838,9 +838,25 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+#about {
+  background: color-mix(in srgb, var(--accent-color), transparent 96%);
+}
+#about img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
 .about .about-content h3 {
   font-weight: 700;
   font-size: 26px;
+  text-align: center;
+}
+
+.about .about-content p {
+  line-height: 30px;
+  text-align: justify;
+  padding-top: 40px;
 }
 
 .about .about-content ul {
@@ -984,6 +1000,17 @@ section,
 
 .tabs .tab-pane img {
   border-radius: 15px;
+  height: 550px;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.tabs #tabs-tab-2 img,
+.tabs #tabs-tab-3 img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -1179,6 +1206,9 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+#portfolio.portfolio {
+  padding-top: 0;
+}
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -1226,8 +1256,9 @@ section,
 .portfolio .portfolio-content img {
   transition: 0.3s;
   width: 100%; 
-  height: auto;
+  height: 200px;
   object-fit:cover;
+  object-position: center;
 }
 
 .portfolio .portfolio-content .portfolio-info {
@@ -1296,12 +1327,18 @@ section,
 --------------------------------------------------------------*/
 .team {
   --default-color: #ffffff;
+  background: color-mix(in srgb, var(--accent-color), transparent 96%);
 }
 
 .team .member {
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.team .member img {
+  height: 350px;
+  width: auto;
 }
 
 .team .member .member-info {
